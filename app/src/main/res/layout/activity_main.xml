@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6F4554"
+    android:paddingVertical="50dp"
+    tools:context=".MainActivity">
+
+  <TextView
+      android:padding="10dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Wellcome To NExtGeN"
+      android:textSize="30dp"
+      android:gravity="center"
+      android:textStyle="bold"
+      android:background="#CC481D"
+      android:id="@+id/tv"
+      />
+
+  <EditText
+      android:layout_below="@+id/tv"
+      android:layout_marginTop="50dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="User email"
+      android:textSize="25dp"
+      android:id="@+id/username"
+      android:inputType="textEmailAddress"
+      />
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textSize="25dp"
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        />
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:text="Login Here"
+        android:onClick="loginUser"
+        android:textSize="20dp"
+        android:background="#6AAFE0"
+        android:id="@+id/button"/>
+
+
+</RelativeLayout>
